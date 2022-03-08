@@ -4,13 +4,7 @@ import { MessagesService } from "./messages.service";
 
 @Controller("messages")
 export class MessagesController {
-  messagesService: MessagesService;
-
-  // Service is creating its own dependencies
-  // DONT DO THIS ON REAL APPS
-  constructor() {
-    this.messagesService = new MessagesService();
-  }
+  constructor(public messagesService: MessagesService, public messagesService2: MessagesService, public messagesService3: MessagesService) {}
 
   @Get()
   listMessages() {

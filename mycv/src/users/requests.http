@@ -16,10 +16,10 @@ GET http://localhost:3000/auth/1
 GET http://localhost:3000/auth?email=asdf@asdf.com
 
 ### Delete a user with a given id
-DELETE http://localhost:3000/auth/333
+DELETE http://localhost:3000/auth/33333
 
 ### Update a user
-PATCH http://localhost:3000/auth/1
+PATCH http://localhost:3000/auth/1234
 Content-Type: application/json
 
 {

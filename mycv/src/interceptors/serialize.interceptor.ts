@@ -8,7 +8,11 @@ import {
   UseInterceptors,
 } from '@nestjs/common';
 
-export function Serialize(dto: any) {
+interface ClassConstructor {
+  new (...args: any[]): {};
+}
+
+export function Serialize(dto: ClassConstructor) {
   return UseInterceptors(new SerializeInterceptor(dto));
 }
 

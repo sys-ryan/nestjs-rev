@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test1@test.com",
   "password": "test123"
 }
 
@@ -12,7 +12,7 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
+  "email": "test1@test.com",
   "password": "test123"
 }
 
@@ -33,3 +33,10 @@ Content-Type: application/json
 {
   "password": "1234"
 }
+
+
+### Set a color
+GET http://localhost:3000/auth/colors/blue
+
+### Get the color
+GET http://localhost:3000/auth/colors
